@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - SneakerHub</title>
+    <title>Admin Dashboard - Sneaker</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <div class="flex min-h-screen">
         <aside class="w-64 bg-slate-900 text-white flex-shrink-0 transition-all duration-300">
             <div class="p-6">
-                <span class="text-2xl font-bold text-indigo-400">ADMIN CP</span>
+                <span class="text-2xl font-bold text-indigo-400">ADMIN DARKY</span>
             </div>
             <nav class="mt-6 px-4 space-y-2">
                 <a href="{{ route('admin.dashboard') }}" class="flex items-center p-3 rounded-lg bg-indigo-600">

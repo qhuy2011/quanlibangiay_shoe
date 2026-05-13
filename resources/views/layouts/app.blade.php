@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Shop Cloudyy')</title>
+    <title>@yield('title', 'Shop Darky')</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -17,7 +17,7 @@
                     <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                         <i class="fas fa-shoe-prints text-white text-lg"></i>
                     </div>
-                    <span class="hidden sm:block">Cloudyy</span>
+                    <span class="hidden sm:block">Darky</span>
                 </a>
 
                 <!-- Desktop Navigation -->
@@ -130,7 +130,7 @@
                         <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center">
                             <i class="fas fa-shoe-prints text-white text-lg"></i>
                         </div>
-                        <span>Cloudyy</span>
+                        <span>Darky</span>
                     </a>
                     <p class="text-gray-400 mb-6 leading-relaxed max-w-md">
                         Shop giày chính hãng uy tín với chất lượng vượt trội.
@@ -173,7 +173,7 @@
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-400">&copy; {{ date('Y') }} Cloudyy. Tất cả quyền được bảo lưu.</p>
+                <p class="text-gray-400">&copy; {{ date('Y') }} Darky. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>

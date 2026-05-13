@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Test Chatbot - Cloudyy')
+@section('title', 'Test Chatbot - Darky')
 
 @section('content')
 <div class="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 py-12">
@@ -9,7 +9,7 @@
             <!-- Header -->
             <div class="text-center mb-12">
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Test Chatbot AI</h1>
-                <p class="text-xl text-gray-600">Kiểm tra tính năng chatbot AI trợ lý của Cloudyy</p>
+                <p class="text-xl text-gray-600">Kiểm tra tính năng chatbot AI trợ lý của Darky</p>
             </div>
 
             <!-- Test Instructions -->
@@ -54,7 +54,7 @@
                                 <i class="fas fa-robot text-white text-xs"></i>
                             </div>
                             <div class="bg-white p-3 rounded-2xl rounded-tl-md shadow-sm max-w-xs">
-                                <p class="text-sm text-gray-800">Xin chào! Tôi là trợ lý AI của Cloudyy. Bạn cần hỗ trợ gì hôm nay?</p>
+                                <p class="text-sm text-gray-800">Xin chào! Tôi là trợ lý AI của Darky. Bạn cần hỗ trợ gì hôm nay?</p>
                                 <p class="text-xs text-gray-500 mt-1">{{ date('H:i') }}</p>
                             </div>
                         </div>

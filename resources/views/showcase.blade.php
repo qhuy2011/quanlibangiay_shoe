@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Website Mới Đẹp Hơn - Cloudyy')
+@section('title', 'Website Mới Đẹp Hơn - Darky')
 
 @section('content')
 <div class="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
@@ -22,7 +22,7 @@
                 <span class="block text-yellow-300 animate-pulse">Đầy Ấn Tượng</span>
             </h1>
             <p class="text-xl md:text-2xl mb-12 text-indigo-100 leading-relaxed max-w-4xl mx-auto">
-                Website Cloudyy giờ đây đẹp hơn bao giờ hết với thiết kế responsive,
+                Website Darky giờ đây đẹp hơn bao giờ hết với thiết kế responsive,
                 animation mượt mà và trải nghiệm người dùng tuyệt vời!
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
@@ -220,7 +220,7 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-6">Sẵn Sàng Trải Nghiệm?</h2>
             <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Website Cloudyy giờ đây đã được nâng cấp hoàn toàn với thiết kế hiện đại,
+                Website Darky giờ đây đã được nâng cấp hoàn toàn với thiết kế hiện đại,
                 tính năng đầy đủ và trải nghiệm người dùng tuyệt vời!
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">

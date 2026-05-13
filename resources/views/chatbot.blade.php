@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat với AI - Cloudyy</title>
+    <title>Chat với AI - Darky</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -36,7 +36,7 @@
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <a href="/" class="text-2xl font-bold text-indigo-600">
-                    <i class="fas fa-shoe-prints mr-2"></i>Cloudyy
+                    <i class="fas fa-shoe-prints mr-2"></i>Darky
                 </a>
                 <nav class="hidden md:flex space-x-6">
                     <a href="/" class="text-gray-600 hover:text-indigo-600">Trang chủ</a>
@@ -58,7 +58,7 @@
                             <i class="fas fa-robot text-2xl"></i>
                         </div>
                         <div>
-                            <h1 class="text-2xl font-bold">Trợ lý AI Cloudyy</h1>
+                            <h1 class="text-2xl font-bold">Trợ lý AI Darky</h1>
                             <p class="text-indigo-100">Tôi sẽ giúp bạn tìm hiểu về sản phẩm và đặt hàng</p>
                         </div>
                     </div>
@@ -72,9 +72,9 @@
                             <div class="bg-indigo-500 text-white p-4 rounded-2xl rounded-tl-md message-bubble">
                                 <div class="flex items-center mb-2">
                                     <i class="fas fa-robot mr-2"></i>
-                                    <span class="font-semibold">Cloudyy AI</span>
+                                    <span class="font-semibold">Darky AI</span>
                                 </div>
-                                <p>Xin chào! 👋 Tôi là trợ lý AI của Cloudyy. Tôi có thể giúp bạn:</p>
+                                <p>Xin chào! 👋 Tôi là trợ lý AI của Darky. Tôi có thể giúp bạn:</p>
                                 <ul class="mt-2 space-y-1 text-sm">
                                     <li>• Tư vấn về các mẫu giày</li>
                                     <li>• Hướng dẫn chọn kích cỡ phù hợp</li>
@@ -227,7 +227,7 @@
                         </div>
                     ` : ''}
                     <div class="${bubbleClass} p-4 message-bubble">
-                        ${sender === 'ai' ? '<div class="flex items-center mb-2"><i class="fas fa-robot mr-2"></i><span class="font-semibold">Cloudyy AI</span></div>' : ''}
+                        ${sender === 'ai' ? '<div class="flex items-center mb-2"><i class="fas fa-robot mr-2"></i><span class="font-semibold">Darky AI</span></div>' : ''}
                         <p class="whitespace-pre-wrap">${message}</p>
                     </div>
                     ${sender === 'user' ? `

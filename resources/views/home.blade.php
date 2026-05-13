@@ -1,10 +1,10 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'Shop Giày Chính Hãng - Cloudyy')
+@section('title', 'Shop Giày Chính Hãng - Darky')
 
 @section('content')
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white overflow-hidden py-20">
+<section class="relative min-h-screen bg-[radial-gradient(circle_at_top_right,_#312e81,_#0f172a_65%)] text-white overflow-hidden py-24 flex items-center">
     <div class="absolute inset-0 bg-black/20"></div>
     <div class="absolute inset-0">
         <div class="absolute top-12 left-10 w-16 h-16 bg-white/10 rounded-full animate-bounce"></div>
@@ -17,11 +17,11 @@
                 <div class="flex items-center gap-4 mb-6">
                     @if(!empty($logo))
                         <div class="w-16 h-16 rounded-3xl border border-white/20 bg-white/10 flex items-center justify-center">
-                            <img src="{{ asset($logo) }}" alt="Cloudyy Logo" class="w-12 h-12 object-contain rounded-full">
+                            <img src="{{ asset($logo) }}" alt="Darky Logo" class="w-12 h-12 object-contain rounded-full">
                         </div>
                     @endif
                     <div>
-                        <p class="text-xs uppercase tracking-[0.35em] text-white/70 font-semibold mb-1">Shop Cloudyy</p>
+                        <p class="text-xs uppercase tracking-[0.35em] text-white/70 font-semibold mb-1">Shop Darky</p>
                         <h2 class="text-2xl md:text-3xl font-extrabold">Thương hiệu giày thời trang</h2>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="order-first">
-                <div class="relative z-20 rounded-[2rem] bg-white/10 border border-white/20 backdrop-blur-xl p-5 shadow-2xl overflow-hidden">
+                <div class="relative z-20 rounded-[2rem] bg-white/5 border border-white/10 backdrop-blur-2xl p-6 shadow-[0_30px_80px_rgba(0,0,0,.45)] overflow-hidden">
                     <div class="flex items-center justify-between mb-5">
                         <div>
                             <p class="text-sm text-white/80">Bộ sưu tập nổi bật</p>
@@ -114,10 +114,10 @@
 </section>
 
 <!-- Features Section -->
-<section id="features" class="py-20 bg-gray-50">
+<section id="features" class="py-24 bg-slate-950 text-white">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại Sao Chọn Cloudyy?</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại Sao Chọn Darky?</h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                 Chúng tôi cam kết mang đến trải nghiệm mua sắm tốt nhất với chất lượng sản phẩm vượt trội
             </p>
@@ -161,7 +161,7 @@
 </section>
 
 <!-- Products Section -->
-<section id="products" class="py-20 bg-white">
+<section id="products" class="py-24 bg-slate-100">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Sản Phẩm Nổi Bật</h2>
@@ -240,11 +240,11 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             @foreach($products as $product)
-            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 group overflow-hidden border border-gray-100">
+            <div class="bg-white rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 group overflow-hidden border border-slate-200">
                 <!-- Product Image -->
                 <div class="relative overflow-hidden h-64">
                     <img src="{{ $product->image }}" alt="{{ $product->name }}"
-                         class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-125 transition duration-700">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300"></div>
 
                     <!-- Quick Actions -->
@@ -340,7 +340,7 @@
 </section>
 
 <!-- Newsletter Section -->
-<section class="py-20 bg-gray-900 text-white">
+<section class="py-24 bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-950 text-white">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl font-bold mb-4">Đăng Ký Nhận Tin Mới</h2>
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -377,7 +377,7 @@
                     @endfor
                 </div>
                 <p class="text-gray-700 mb-6 italic leading-relaxed">
-                    "Cloudyy có bộ sưu tập giày sneaker rất đa dạng và chất lượng.
+                    "Darky có bộ sưu tập giày sneaker rất đa dạng và chất lượng.
                     Tôi đã mua 3 đôi giày ở đây và đều rất hài lòng với chất lượng cũng như dịch vụ."
                 </p>
                 <div class="flex items-center">
@@ -385,7 +385,7 @@
                         <span class="text-white font-bold">N</span>
                     </div>
                     <div>
-                        <div class="font-bold text-gray-900">Nguyễn Văn A</div>
+                        <div class="font-bold text-gray-900">Nguyễn Quốc Huy</div>
                         <div class="text-sm text-gray-600">Khách hàng VIP</div>
                     </div>
                 </div>
@@ -399,14 +399,14 @@
                 </div>
                 <p class="text-gray-700 mb-6 italic leading-relaxed">
                     "Giao hàng nhanh chóng, đóng gói cẩn thận. Chính sách đổi trả rất rõ ràng và dễ hiểu.
-                    Tôi sẽ tiếp tục ủng hộ Cloudyy trong tương lai."
+                    Tôi sẽ tiếp tục ủng hộ Darky trong tương lai."
                 </p>
                 <div class="flex items-center">
                     <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
                         <span class="text-white font-bold">T</span>
                     </div>
                     <div>
-                        <div class="font-bold text-gray-900">Trần Thị B</div>
+                        <div class="font-bold text-gray-900">Trần Thị Bui</div>
                         <div class="text-sm text-gray-600">Khách hàng thân thiết</div>
                     </div>
                 </div>
@@ -427,7 +427,7 @@
                         <span class="text-white font-bold">L</span>
                     </div>
                     <div>
-                        <div class="font-bold text-gray-900">Lê Văn C</div>
+                        <div class="font-bold text-gray-900">Lê Văn Co</div>
                         <div class="text-sm text-gray-600">Khách hàng mới</div>
                     </div>
                 </div>
@@ -437,7 +437,7 @@
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white">
+<section class="py-24 bg-[linear-gradient(135deg,#111827,#312e81,#7c3aed)] text-white">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-6">Sẵn Sàng Sở Hữu Đôi Giày Hoàn Hảo?</h2>
         <p class="text-xl mb-8 text-indigo-100 max-w-2xl mx-auto">
@@ -453,6 +453,21 @@
         </div>
     </div>
 </section>
+
+<style>
+.slider-slide{
+    opacity:0;
+    transform:translateX(60px) scale(.95);
+    position:absolute;
+    inset:0;
+}
+.slider-slide.active{
+    opacity:1;
+    transform:translateX(0) scale(1);
+    position:relative;
+    transition:all .7s ease;
+}
+</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

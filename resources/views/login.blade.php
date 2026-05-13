@@ -41,7 +41,7 @@
             <button type="submit" class="w-full bg-indigo-600 text-white py-3.5 rounded-xl font-bold text-lg hover:bg-indigo-700 transition shadow-lg">
                 Đăng Nhập
             </button>
-            
+
             <div class="text-center mt-4">
                 <p class="text-gray-500 text-sm mb-2">
                     Chưa có tài khoản?

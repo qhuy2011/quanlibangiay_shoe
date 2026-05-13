@@ -15,10 +15,10 @@
 
     <main class="container mx-auto px-6 py-12">
         <div class="flex flex-col lg:flex-row gap-8 max-w-5xl mx-auto">
-            
+
             <div class="lg:w-2/3 bg-white p-8 rounded-2xl shadow-sm">
                 <h2 class="text-2xl font-bold mb-6">Thông tin giao hàng</h2>
-                
+
                 <form action="{{ route('checkout.process') }}" method="POST">
                     @csrf
                     <div class="space-y-4">
@@ -38,7 +38,7 @@
                             <label class="block font-semibold mb-1">Ghi chú (Tùy chọn)</label>
                             <textarea name="notes" rows="2" class="w-full border p-3 rounded-xl bg-gray-50" placeholder="VD: Giao giờ hành chính..."></textarea>
                         </div>
-                        
+
                         <div>
                             <label class="block font-semibold mb-3">Phương thức thanh toán</label>
                             <div class="space-y-3">
@@ -49,7 +49,7 @@
                                         <div class="text-sm text-gray-600">Thanh toán bằng tiền mặt khi nhận hàng</div>
                                     </div>
                                 </label>
-                                
+
                                 <label class="flex items-center p-4 border rounded-xl bg-gray-50 cursor-pointer hover:bg-gray-100 transition">
                                     <input type="radio" name="payment_method" value="bank" class="mr-3">
                                     <div>
@@ -57,7 +57,7 @@
                                         <div class="text-sm text-gray-600">Thanh toán qua chuyển khoản ngân hàng</div>
                                     </div>
                                 </label>
-                                
+
                                 <label class="flex items-center p-4 border rounded-xl bg-gray-50 cursor-pointer hover:bg-gray-100 transition">
                                     <input type="radio" name="payment_method" value="momo" class="mr-3">
                                     <div>
@@ -65,7 +65,7 @@
                                         <div class="text-sm text-gray-600">Thanh toán nhanh qua ứng dụng MoMo</div>
                                     </div>
                                 </label>
-                                
+
                                 <label class="flex items-center p-4 border rounded-xl bg-gray-50 cursor-pointer hover:bg-gray-100 transition">
                                     <input type="radio" name="payment_method" value="installment" class="mr-3">
                                     <div>
@@ -75,30 +75,43 @@
                                 </label>
                             </div>
                         </div>
-                        
+
                         <!-- Thông tin thanh toán bổ sung -->
                         <div id="bank-info" class="hidden mt-4 p-4 border rounded-xl bg-blue-50">
-                            <h4 class="font-semibold mb-2">Thông tin chuyển khoản</h4>
-                            <p class="text-sm text-gray-700 mb-2">Vui lòng chuyển khoản đến tài khoản sau:</p>
-                            <div class="bg-white p-3 rounded border text-sm">
-                                <p><strong>Ngân hàng:</strong> Vietcombank</p>
-                                <p><strong>Số tài khoản:</strong> 1234567890</p>
-                                <p><strong>Chủ tài khoản:</strong> SNEAKERHUB</p>
-                                <p><strong>Nội dung:</strong> [Tên của bạn] - [Số điện thoại]</p>
-                            </div>
-                            <p class="text-xs text-gray-600 mt-2">* Sau khi chuyển khoản, vui lòng gửi ảnh bill cho chúng tôi qua số điện thoại để xác nhận.</p>
-                        </div>
-                        
+    <h4 class="font-semibold mb-2">Thông tin chuyển khoản</h4>
+    <p class="text-sm text-gray-700 mb-2">Vui lòng quét mã QR hoặc chuyển khoản đến tài khoản sau:</p>
+
+    <div class="bg-white p-4 rounded border flex items-center gap-4">
+        <div class="w-100 h-80 flex-shrink-0">
+            <img src="{{ asset('storage/mbbank-qr.jpg') }}" alt="QR"
+                 alt="QR MB Bank"
+                 class="w-full h-full object-contain rounded">
+        </div>
+
+        <!-- Thông tin ngân hàng -->
+        <div class="text-sm">
+            <p><strong>Ngân hàng:</strong> MB Bank</p>
+            <p><strong>Số tài khoản:</strong> 2011200459999</p>
+            <p><strong>Chủ tài khoản:</strong> NGUYENQUOCHUY</p>
+            <p><strong>Nội dung:</strong> [Tên của bạn] - [Số điện thoại]</p>
+        </div>
+    </div>
+
+    <p class="text-xs text-gray-600 mt-2">
+        * Sau khi chuyển khoản, vui lòng gửi ảnh bill cho chúng tôi qua số điện thoại để xác nhận.
+    </p>
+</div>
+
                         <div id="momo-info" class="hidden mt-4 p-4 border rounded-xl bg-pink-50">
                             <h4 class="font-semibold mb-2">Thanh toán MoMo</h4>
                             <p class="text-sm text-gray-700 mb-2">Quét mã QR hoặc chuyển khoản đến số MoMo:</p>
                             <div class="bg-white p-3 rounded border text-sm text-center">
-                                <p><strong>Số MoMo:</strong> 0123 456 789</p>
-                                <p><strong>Chủ tài khoản:</strong> SNEAKERHUB</p>
+                                <p><strong>Số MoMo:</strong> 0329166804</p>
+                                <p><strong>Chủ tài khoản:</strong> NGUYENQUOCHUY</p>
                                 <p class="mt-2 text-xs text-gray-600">* Gửi ảnh bill sau khi thanh toán</p>
                             </div>
                         </div>
-                        
+
                         <div id="installment-info" class="hidden mt-4 p-4 border rounded-xl bg-green-50">
                             <h4 class="font-semibold mb-2">Điều kiện thanh toán trả sau</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
@@ -109,7 +122,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="mt-8 w-full bg-indigo-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-indigo-700 transition shadow-lg">
                         Xác nhận Đặt Hàng
                     </button>
@@ -119,7 +132,7 @@
             <div class="lg:w-1/3">
                 <div class="bg-gray-900 text-white p-6 rounded-2xl shadow-sm sticky top-6">
                     <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-4">Đơn hàng của bạn</h3>
-                    
+
                     <div class="space-y-4 mb-4 border-b border-gray-700 pb-4 text-sm">
                         @php $total = 0; @endphp
                         @foreach($cart as $details)
@@ -130,7 +143,7 @@
                             </div>
                         @endforeach
                     </div>
-                    
+
                     <div class="flex justify-between text-xl font-bold">
                         <span>Tổng cộng:</span>
                         <span class="text-indigo-400">{{ number_format($total, 0, ',', '.') }}₫</span>
@@ -147,7 +160,7 @@
                 document.getElementById('bank-info').classList.add('hidden');
                 document.getElementById('momo-info').classList.add('hidden');
                 document.getElementById('installment-info').classList.add('hidden');
-                
+
                 // Show selected info section
                 if (this.value === 'bank') {
                     document.getElementById('bank-info').classList.remove('hidden');

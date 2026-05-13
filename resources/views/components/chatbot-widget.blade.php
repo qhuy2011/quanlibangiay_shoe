@@ -16,7 +16,7 @@
                 </div>
                 <div>
                     <h3 class="font-semibold text-sm">AI Trợ lý</h3>
-                    <p class="text-xs opacity-90">Cloudyy Support</p>
+                    <p class="text-xs opacity-90">Darky Support</p>
                 </div>
             </div>
             <button id="chat-close" class="text-white hover:text-gray-200 transition">
@@ -31,7 +31,7 @@
                     <i class="fas fa-robot text-white text-xs"></i>
                 </div>
                 <div class="bg-white p-3 rounded-2xl rounded-tl-md shadow-sm max-w-xs">
-                    <p class="text-sm text-gray-800">Xin chào! Tôi là trợ lý AI của Cloudyy. Tôi có thể giúp bạn tìm hiểu về sản phẩm, tư vấn kích cỡ, hoặc trả lời câu hỏi về đặt hàng. Bạn cần hỗ trợ gì hôm nay?</p>
+                    <p class="text-sm text-gray-800">Xin chào! Tôi là trợ lý AI của Darky. Tôi có thể giúp bạn tìm hiểu về sản phẩm, tư vấn kích cỡ, hoặc trả lời câu hỏi về đặt hàng. Bạn cần hỗ trợ gì hôm nay?</p>
                     <p class="text-xs text-gray-500 mt-1">{{ date('H:i') }}</p>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $product->name . ' - Cloudyy')
+@section('title', $product->name . ' - Darky')
 
 @section('content')
 <!-- Breadcrumb -->
