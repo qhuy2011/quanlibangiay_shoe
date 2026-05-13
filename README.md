@@ -142,8 +142,8 @@ storage/        # File lưu trữ
 
 # 👨‍💻 Tác giả
 
-- Họ và tên: YOUR NAME
-- GitHub: https://github.com/YOUR_GITHUB
+- Họ và tên: Nguyen Quoc Huy
+- GitHub: https://github.com/qhuy2011/quanlibangiay_shoe
 
 ---
 
